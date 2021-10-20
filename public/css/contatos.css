@@ -3,6 +3,8 @@
      
 }
 
+
+
 .card p {
     font: 1em sans-serif;
     margin-left: 15px;
@@ -37,6 +39,7 @@
     background-color: rgb(24, 22, 22);
     padding: 15px;
     border-radius: 20px;
+    
 }
 
 .card textarea {
