@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header nav{
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+}
+
+header nav .mainMenu {
+    display: flex;
+    list-style: none;
+
+}
+
+header nav .mainMenu li a {
+   display: inline-block;
+   padding: 15px;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #fff;
+   font-size: 1.5rem;
+}
+
+header nav .mainMenu li a:hover {
+    background: rgb(151, 201, 145);
+    transition: 1s;
+}
+
+header nav .abrirMenu {
+    font-size:  2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+header nav .mainMenu .fecharMenu , .icons i  {
+     font-size: 2rem;
+     display: none;
+     cursor: pointer;
+}
+
+.google:hover {color: rgb(0, 110, 255);}
+.github:hover {color: rgb(0, 255, 98);}
+.linkedin:hover {color: rgb(41, 10, 180);}
+.email:hover {color: rgb(18, 124, 173);}
+
+
+/* Responsivo HEADER ************/
+
+@media(max-width: 800px) {
+    header nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease; 
+        display: none;
+    }
+
+    header nav .mainMenu .fecharMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    header nav .abrirMenu {
+        display: block;
+        
+    }
+
+    header nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(151, 201, 145);
+        font-size: 1.6rem;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px   ;
+        color: white;
+    }
+}
+
+
